@@ -91,19 +91,79 @@
   position: relative;
 }
 
-#slider .text-content{
-    color: #fff;
-    position: absolute;
-    bottom: 47px;
-    justify-items: center;
-    width: 100%;
+#slider .text-content {
+  color: #fff;
+  position: absolute;
+  bottom: 47px;
+  justify-items: center;
+  width: 100%;
 }
-#slider .text-description{
-    font-size: 15px;
-    margin-top: 25px;
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
 }
 #content {
+  justify-items: center;
 }
+.content-section {
+  width: 100%;
+  height: 670px;
+  max-width: 800px;
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  width: 100%;
+  justify-items: center;
+  
 
+  margin: 0 139px;
+}
+.section-heading {
+  margin: 10px;
+  justify-items: center;
+  
+}
+.section-sub-heading {
+  margin: 15px;
+  font-style: italic;
+  
+}
+.about {
+  text-align: justify !important;
+  font-size: 15px;
+  
+}
+.profile {
+  max-width: 800px;
+  width: 100%;
+  height: 340px;
+  display: block;
+  padding: 32px 0;
+  
+}
+.profile .name {
+  color: #000;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  width: 100%;
+  
+}
+.profile .image {
+    height: 200px;
+    width: 33.33333%;
+    display: flex;             /* Thêm display: flex */
+    flex-direction: column;    /* Đặt hướng nội dung là dọc */
+    justify-content: center;   /* Căn giữa theo chiều dọc */
+    align-items: center;       /* Căn giữa theo chiều ngang */
+    float: left;
+  }
+.image .nember{
+    background: url("/asset/img/bandmember.jpg") top center / cover no-repeat;
+    height: 150px;
+    width: 60%;
+    margin: 15px 0;
+    margin-bottom: 16px;
+    
+}
 #footer {
 }
