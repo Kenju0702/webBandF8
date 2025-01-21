@@ -104,33 +104,33 @@
 }
 #content {
   justify-items: center;
-}
-.content-section {
   width: 100%;
-  height: 670px;
-  max-width: 800px;
   padding-top: 64px !important;
   padding-bottom: 64px !important;
   width: 100%;
+  margin: 0px auto;
+}
+.content-section {
   justify-items: center;
-  
+  height: 670px;
+  max-width: 800px;
 
   margin: 0 139px;
 }
 .section-heading {
   margin: 10px;
   justify-items: center;
-  
+  font-weight: 500;
 }
 .section-sub-heading {
   margin: 15px;
   font-style: italic;
-  
+  opacity: 0.5;
 }
 .about {
   text-align: justify !important;
   font-size: 15px;
-  
+  line-height: 20px;
 }
 .profile {
   max-width: 800px;
@@ -138,32 +138,130 @@
   height: 340px;
   display: block;
   padding: 32px 0;
-  
 }
 .profile .name {
   color: #000;
   display: flex;
-  justify-content: center; 
-  align-items: center;    
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  
 }
 .profile .image {
-    height: 200px;
-    width: 33.33333%;
-    display: flex;             /* Thêm display: flex */
-    flex-direction: column;    /* Đặt hướng nội dung là dọc */
-    justify-content: center;   /* Căn giữa theo chiều dọc */
-    align-items: center;       /* Căn giữa theo chiều ngang */
-    float: left;
-  }
-.image .nember{
-    background: url("/asset/img/bandmember.jpg") top center / cover no-repeat;
-    height: 150px;
-    width: 60%;
+  height: 200px;
+  width: 33.33333%;
+  display: flex; /* Thêm display: flex */
+  flex-direction: column; /* Đặt hướng nội dung là dọc */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  float: left;
+}
+.image .nember {
+  background: url("/asset/img/bandmember.jpg") top center / cover no-repeat;
+  height: 150px;
+  width: 60%;
+  margin: 15px 0;
+  margin-bottom: 16px;
+}
+
+#tour {
+  background-color: #000;
+  min-height: 850px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+#tour .content-section {
+  margin: 0px auto;
+  padding: 64px 16px;
+}
+#tour .schedule .listMonth {
+  color: #757575 !important;
+  background-color: #fff !important;
+  list-style-type: none;
+  display: block;
+  height: 117px;
+  width: 800px;
+  border: 1px solid #ccc !important;
+  margin-top: 30px;
+}
+
+#tour .schedule .month {
+  border-bottom: 1px solid #ddd;
+  padding: 9px 16px !important;
+  display: block;
+}
+.sold {
+  background: red;
+  margin-left: 16px;
+  padding: 8px;
+  font-size: 15px;
+  color: #fff;
+  line-height: 4.5px;
+  display: inline-block;
+  font-size: 15px;
+}
+.circle {
+  height: 18px;
+  width: 23px;
+  margin-right: 16px;
+  padding-left: 10px;
+  padding-right: 8px;
+  border-radius: 50%;
+  line-height: 19px;
+  float: right;
+  background: #000;
+  color: #fff;
+}
+
+#tour .card {
+  height: 350px;
+  width: 817px;
+  margin-top: 30px;
+  margin-left: 16px;
+  margin-right: 16px;
+  line-height: 10px;
+  font-size: 15px;
+}
+#tour .content-ticket {
+  background-color: #fff;
+  width: 100%;
+  height: 189px;
+  padding: 0.5px 16px;
+  
+
+}
+.carditem {
+  display: block;
+  color: #000;
+  width: 33.30%;
+  height: 385px;
+  float: left;
+  padding: 0px 8px;
+  background-color: #000;
+  
+}
+.carditem > img {
+  height: 185px;
+  width: 100%;
+}
+
+.nameticket{
     margin: 15px 0;
-    margin-bottom: 16px;
-    
+}
+.date{
+    margin: 15px 0;
+    opacity: 0.6;
+
+}
+.description{
+    margin: 15px 0;
+     line-height: 26px;
+
+}
+.buyTicker{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
 }
 #footer {
 }
