@@ -104,11 +104,8 @@
 }
 #content {
   justify-items: center;
-  width: 100%;
-  padding-top: 64px !important;
-  padding-bottom: 64px !important;
-  width: 100%;
-  margin: 0px auto;
+  min-height: 100px;
+
 }
 .content-section {
   justify-items: center;
@@ -227,41 +224,150 @@
   width: 100%;
   height: 189px;
   padding: 0.5px 16px;
-  
-
 }
 .carditem {
   display: block;
   color: #000;
-  width: 33.30%;
+  width: 33.3%;
   height: 385px;
   float: left;
   padding: 0px 8px;
   background-color: #000;
-  
 }
 .carditem > img {
   height: 185px;
   width: 100%;
 }
 
-.nameticket{
-    margin: 15px 0;
+.nameticket {
+  margin: 15px 0;
 }
-.date{
-    margin: 15px 0;
-    opacity: 0.6;
+.date {
+  margin: 15px 0;
+  opacity: 0.6;
+}
+.description {
+  margin: 15px 0;
+  line-height: 26px;
+}
+.buyTicker {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+}
 
+#contract {
+  color: #000;
+  width: 800px;
+  height: 400px;
+  line-height: 1.5;
 }
-.description{
-    margin: 15px 0;
-     line-height: 26px;
 
+.contentContract {
+  height: 100%;
+  width: 100%;
+  padding: 0px 16px;
+  margin: 32px 0;
 }
-.buyTicker{
-    background-color: #000;
-    color: #fff;
-    padding: 8px 16px;
+#contract .listInfomation {
+  display: block;
+  height: 81px;
+  float: left;
+  width: 45%;
+}
+#contract .listInfomation ul {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.iconInfo {
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #000; /* Màu biểu tượng */
+  margin-right: 10px; /* Khoảng cách giữa biểu tượng và nội dung */
+}
+
+#contract .content-section {
+  margin: 0px auto;
+  padding: 64px 16px;
+}
+
+#contract .formInput {
+  width: 49%;
+  height: 160px;
+  float: right;
+}
+
+#contract .formInput .field {
+  height: 31px;
+  width: 48%;
+  float: right; /* Đặt input nằm ngang */
+  margin-right: 2%; /* Khoảng cách giữa 2 input */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contract .formInput .field1 {
+  height: 31px;
+  width: 48%;
+  float: left; /* Đặt input nằm ngang */
+  margin-right: 2%; /* Khoảng cách giữa 2 input */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contract .formInput .field2 {
+  height: 31px;
+  width: 98%;
+  margin-top: 10px;
+  margin-right: 2%; /* Khoảng cách giữa 2 input */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.buttonsend {
+  color: #fff !important;
+  background-color: #000 !important;
+  float: right !important;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  padding: 8px 16px;
+  margin-right: 7px;
+}
+
+.buttonsend:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
 }
 #footer {
+  height: 162px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.map{
+  width: 100%;
+  background: url("/asset/img/map.jpg") top center / cover no-repeat;
+  padding-top: 50%;
+  margin-top: 46px;
+}
+#footer .listIconLink {
+  display: inline-block;
+  color: #000;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+#footer .listIconLink li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.listIconLink li i {
+   font-size: 20px;
+}
+.nqt {
+  text-align: center;
+}
+.nqt a {
+  color: #000;
 }
