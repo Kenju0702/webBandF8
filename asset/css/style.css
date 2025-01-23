@@ -10,6 +10,13 @@
 #html {
   font-family: Arial, Helvetica, sans-serif;
 }
+.clear {
+  clear: both;
+}
+
+.white-text {
+  color: #fff !important;
+}
 #header {
   height: 46px;
   background-color: #000;
@@ -102,170 +109,138 @@
   font-size: 15px;
   margin-top: 25px;
 }
-#content {
-  justify-items: center;
-  min-height: 100px;
 
+#content .content-section {
+  width: 800px;
+  margin: 0px auto;
+  padding: 64px 16px;
 }
-.content-section {
-  justify-items: center;
-  height: 670px;
-  max-width: 800px;
 
-  margin: 0 139px;
+#content .section-heading {
+  font-size: 30px;
+  margin: 0 10px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
 }
-.section-heading {
-  margin: 10px;
-  justify-items: center;
-  font-weight: 500;
-}
-.section-sub-heading {
-  margin: 15px;
-  font-style: italic;
-  opacity: 0.5;
-}
-.about {
-  text-align: justify !important;
+
+#content .section-sub-heading {
   font-size: 15px;
-  line-height: 20px;
-}
-.profile {
-  max-width: 800px;
-  width: 100%;
-  height: 340px;
-  display: block;
-  padding: 32px 0;
-}
-.profile .name {
-  color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.profile .image {
-  height: 200px;
-  width: 33.33333%;
-  display: flex; /* Thêm display: flex */
-  flex-direction: column; /* Đặt hướng nội dung là dọc */
-  justify-content: center; /* Căn giữa theo chiều dọc */
-  align-items: center; /* Căn giữa theo chiều ngang */
-  float: left;
-}
-.image .nember {
-  background: url("/asset/img/bandmember.jpg") top center / cover no-repeat;
-  height: 150px;
-  width: 60%;
+  line-height: 1.5;
+  font-style: italic;
+  opacity: 0.6;
   margin: 15px 0;
-  margin-bottom: 16px;
+  text-align: center;
+}
+#content .about {
+  text-align: justify;
+  margin: 15px 0px;
+}
+
+#content .nember-item {
+  float: left;
+  width: 33.33333%;
+  padding-top: 32px;
+  text-align: center;
+}
+#content .nember-name {
+  margin: 15px 0;
+}
+
+#content .img-nember {
+  width: 154px;
 }
 
 #tour {
   background-color: #000;
-  min-height: 850px;
-  height: 100%;
-  width: 100%;
-  color: #fff;
-}
-#tour .content-section {
-  margin: 0px auto;
-  padding: 64px 16px;
-}
-#tour .schedule .listMonth {
-  color: #757575 !important;
-  background-color: #fff !important;
-  list-style-type: none;
-  display: block;
-  height: 117px;
-  width: 800px;
-  border: 1px solid #ccc !important;
-  margin-top: 30px;
 }
 
-#tour .schedule .month {
-  border-bottom: 1px solid #ddd;
-  padding: 9px 16px !important;
-  display: block;
-}
-.sold {
-  background: red;
-  margin-left: 16px;
-  padding: 8px;
-  font-size: 15px;
-  color: #fff;
-  line-height: 4.5px;
-  display: inline-block;
-  font-size: 15px;
-}
-.circle {
-  height: 18px;
-  width: 23px;
-  margin-right: 16px;
-  padding-left: 10px;
-  padding-right: 8px;
-  border-radius: 50%;
-  line-height: 19px;
-  float: right;
-  background: #000;
-  color: #fff;
-}
-
-#tour .card {
-  height: 350px;
-  width: 817px;
+.ticket-list {
   margin-top: 30px;
-  margin-left: 16px;
-  margin-right: 16px;
-  line-height: 10px;
-  font-size: 15px;
 }
-#tour .content-ticket {
+.ticket-list li {
+  color: #757575;
   background-color: #fff;
-  width: 100%;
-  height: 189px;
-  padding: 0.5px 16px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  list-style-type: none;
 }
-.carditem {
-  display: block;
-  color: #000;
-  width: 33.3%;
-  height: 385px;
-  float: left;
-  padding: 0px 8px;
+.ticket-list .sold {
+  background-color: red;
+  padding: 6px 4px;
+  font-size: 15px;
+  color: #fff;
+  margin-left: 16px;
+}
+.ticket-list .circle {
+  color: #fff;
   background-color: #000;
-}
-.carditem > img {
-  height: 185px;
-  width: 100%;
+  font-size: 20px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  padding-left: 7px;
+  float: right;
 }
 
-.nameticket {
-  margin: 15px 0;
+.place-list {
+  margin: 32px -8px 0;
 }
-.date {
-  margin: 15px 0;
+
+.place-item {
+  float: left;
+  width: 33.3333%;
+  padding: 0px 8px;
+}
+.place-img {
+  width: 100%;
+  display: block;
+}
+.place-img:hover {
   opacity: 0.6;
 }
-.description {
-  margin: 15px 0;
-  line-height: 26px;
+.place-body {
+  background-color: #fff;
+  padding: 16px 16px;
+  font-size: 15px;
 }
-.buyTicker {
+
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.place-time {
+  margin: 15px 0;
+}
+
+.place-desc {
+  margin: 15px 0;
+  line-height: 1.5;
+
+}
+
+.place-buy-btn {
+  padding: 8px 16px;
   background-color: #000;
   color: #fff;
-  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.place-buy-btn:hover
+{
+  color: #000;
+  background-color: #ccc;
 }
 
 #contract {
   color: #000;
-  width: 800px;
-  height: 400px;
   line-height: 1.5;
 }
 
 .contentContract {
-  height: 100%;
-  width: 100%;
   padding: 0px 16px;
   margin: 32px 0;
 }
@@ -326,25 +301,25 @@
   border-radius: 4px;
 }
 .buttonsend {
-  color: #fff !important;
-  background-color: #000 !important;
-  float: right !important;
-  margin-top: 16px !important;
-  margin-bottom: 16px !important;
+  color: #fff ;
+  background-color: #000 ;
+  float: right ;
+  margin-top: 16px ;
+  margin-bottom: 16px ;
   padding: 8px 16px;
   margin-right: 7px;
 }
 
 .buttonsend:hover {
-  color: #000 !important;
-  background-color: #ccc !important;
+  color: #000 ;
+  background-color: #ccc ;
 }
 #footer {
   height: 162px;
   width: 100%;
   background-color: #f1f1f1;
 }
-.map{
+.map {
   width: 100%;
   background: url("/asset/img/map.jpg") top center / cover no-repeat;
   padding-top: 50%;
@@ -363,7 +338,7 @@
   margin-right: 5px;
 }
 .listIconLink li i {
-   font-size: 20px;
+  font-size: 20px;
 }
 .nqt {
   text-align: center;

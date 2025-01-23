@@ -12,10 +12,10 @@
       <div id="header">
         <!-- start-navigation  -->
         <ul class="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contract</a></li>
+          <li><a href="#slider">Home</a></li>
+          <li><a href="#content">Band</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contract">Contract</a></li>
           <li>
             <a href="">
               More
@@ -61,62 +61,70 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <div class="profile">
-            <div class="image">
-                <p class="name">Name</p>
-                <div class="nember"></div>
-
+          <!-- list nember  -->
+          <div class="nember-list">
+            <div class="nember-item">
+              <p class="nember-name">Name</p>
+              <img class="img-nember" src="/asset/img/bandmember.jpg"alt="name"  />
             </div>
-            <div class="image">
-                <p class="name">Name</p>
-                <div class="nember"></div>
+  
+            <div class="nember-item">
+              <p class="nember-name">Name</p>
+              <img class="img-nember" src="/asset/img/bandmember.jpg"alt="name"  />
             </div>
-            <div class="image">
-                <p class="name">Name</p>
-                <div class="nember"></div>
+  
+            <div class="nember-item">
+              <p class="nember-name">Name</p>
+              <img class="img-nember" src="/asset/img/bandmember.jpg" alt="name" />
             </div>
-
           </div>
+          <div class="clear"></div>
+          <!--  end list nember  -->
         </div>
         <div id="tour">
-            <div class="content-section">
-                <h2 class="section-heading">TOUR DATES</h2>
-                <p class="section-sub-heading">Remember to book your tickets!</p>
-          <div class="schedule">
-            <ul class="listMonth">
-                <li class="month">September <span class="sold">Sold out</span></li>
-                <li class="month">October <span class="sold">Sold out</span></li>
-                <li class="month">November <span class="circle">3</span></li>
-            </ul>
-          </div>
-          <div class="card">
-            <div class="carditem"><img src="/asset/img/newyork.jpg" alt="">
-                <div class="content-ticket">
-                    <p class="nameticket">New York</p>
-                    <p class="date">Fri 27 Nov 2016</p>
-                    <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                    <button class="buyTicker">Buy Tickets</button>
+          <div class="content-section">
+            <h2 class="section-heading white-text">TOUR DATES</h2>
+            <p class="section-sub-heading white-text">Remember to book your tickets!</p>
+             <!--Tickets-->
+            <ul class="ticket-list">
+                <li>September <span class="sold">Sold out</span></li>
+                <li>October <span class="sold">Sold out</span></li>
+                <li>November <span class="circle">3</span></li>
+              </ul>
+              <!--place-->
+              <div class="place-list">
+                <div class="place-item"><img src="/asset/img/newyork.jpg" alt="" class="place-img">
+                  <div class="place-body">
+                    <h3 class="place-heading">New York</h3>
+                    <p class="place-time">Fri 27 Nov 2016</p>
+                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                  </div>
                 </div>
-        </div>
-        <div class="carditem"><img src="/asset/img/paris.jpg" alt="">
-           <div class="content-ticket">
-            <p class="nameticket">Paris</p>
-            <p class="date">Sat 28 Nov 2016</p>
-            <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-            <button class="buyTicker">Buy Tickets</button>
-        </div>
-         </div>         
-         <div class="carditem"><img src="/asset/img/sanfran.jpg" alt="">
-            <div class="content-ticket">
-                <p class="nameticket">San Francisco</p>
-                <p class="date">Sun 29 Nov 2016</p>
-                <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                <button class="buyTicker">Buy Tickets</button>
-            </div>
-         </div>        
-        </div>
-    </div>           
+
+                <div class="place-item"><img src="/asset/img/newyork.jpg" alt="" class="place-img">
+                  <div class="place-body">
+                    <h3 class="place-heading">New York</h3>
+                    <p class="place-time">Fri 27 Nov 2016</p>
+                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                  </div>
+                </div>
+
+                <div class="place-item"><img src="/asset/img/newyork.jpg" alt="" class="place-img">
+                  <div class="place-body">
+                    <h3 class="place-heading">New York</h3>
+                    <p class="place-time">Fri 27 Nov 2016</p>
+                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+
+              </div>
       </div>
+       </div>
+     
       <div id="contract">
         <div class="content-section">
           <h2 class="section-heading">CONTACT</h2>
@@ -139,10 +147,12 @@
             </form>
               </div>
           </div>
+          <div class="clear"></div>
+
        </div>
 
       </div>
-      <div class="map"></div>
+      <div class="map"></div> 
       <div id="footer">
         <ul class="listIconLink">
           <li class="ICon"><i class="ti-facebook"></i></li>
@@ -154,7 +164,10 @@
         </ul>
         <p class="nqt">
           powered by
-          <a href="https://github.com/Kenju0702?tab=overview&from=2025-01-01&to=2025-01-22" target="_blank">Kenju0702
+          <a
+            href="https://github.com/Kenju0702?tab=overview&from=2025-01-01&to=2025-01-22"
+            target="_blank"
+            >Kenju0702
           </a>
         </p>
       </div>
