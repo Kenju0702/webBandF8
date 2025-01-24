@@ -235,6 +235,8 @@
   background-color: #ccc;
 }
 
+
+
 #contract {
   color: #000;
   line-height: 1.5;
@@ -345,4 +347,104 @@
 }
 .nqt a {
   color: #000;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-container{
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 200px;
+  width: 900px;
+  line-height: 1.5;
+  position: relative;
+
+}
+
+.heading-modal {
+  background-color: #009688;
+  font-size: 30px;
+  padding: 42px 32px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  line-height: 1.5;
+  position: relative;
+}
+.ti-bag{
+  margin-right: 10px;
+}
+.close-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 16px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.body-modal{
+  padding: 16px;
+}
+.label-modal {
+  margin: 16px 0;
+  font-weight: 500;
+}
+.field {
+  padding: 13px;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.label{
+  margin-left: 5px;
+}
+a.bnt-modal {
+ display: block;
+  width: 100%;
+  background: #009688;
+  padding: 16px;
+  margin: 16px 0px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+a.bnt-modal:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+a.bntc-modal {
+  padding: 8px 16px;
+  background: red;
+  margin: 16px 0px;
+  text-decoration: none;
+  color: #fff;
+}
+a.bntc-modal:hover {
+  background: #ccc;
+}
+
+.footer-modal {
+display: block;
+margin-top: 30px;
+margin-bottom: 8px;
+
+}
+
+.need{
+  float: right;
+}
+.help{
+  color: #009688;
 }
