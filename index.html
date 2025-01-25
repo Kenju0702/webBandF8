@@ -98,25 +98,25 @@
                     <h3 class="place-heading">New York</h3>
                     <p class="place-time">Fri 27 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                    <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                   </div>
                 </div>
 
-                <div class="place-item"><img src="/asset/img/newyork.jpg" alt="" class="place-img">
+                <div class="place-item"><img src="/asset/img/paris.jpg" alt="" class="place-img">
                   <div class="place-body">
-                    <h3 class="place-heading">New York</h3>
-                    <p class="place-time">Fri 27 Nov 2016</p>
+                    <h3 class="place-heading">Paris</h3>
+                    <p class="place-time">Sat 28 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                    <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                   </div>
                 </div>
 
-                <div class="place-item"><img src="/asset/img/newyork.jpg" alt="" class="place-img">
+                <div class="place-item"><img src="/asset/img/sanfran.jpg" alt="" class="place-img">
                   <div class="place-body">
-                    <h3 class="place-heading">New York</h3>
-                    <p class="place-time">Fri 27 Nov 2016</p>
+                    <h3 class="place-heading">San Francisco</h3>
+                    <p class="place-time">Sun 29 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                    <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                   </div>
                 </div>
                 <div class="clear"></div>
@@ -171,7 +171,7 @@
           </a>
         </p>
       </div>
-      <div class="modal">
+      <div class="modal  js-modal">
         <div class="modal-container">
           <div class="heading-modal">
             <i class=" close-icon ti-close"></i>
@@ -186,10 +186,12 @@
               <i class="ti-user"></i> <span class="label">Send To</span>
             </div>
             <input type="text" class="field" placeholder="Enter your email">
-            <a href="#" class="bnt-modal"> Pay <i class="ti-check"></i></a>
+            <button href="#" class="bnt-modal"> Pay <i class="ti-check"></i></button>
             <div class="footer-modal">
-              <a href="#" class="bntc-modal">Close <i class="ti-close"></i></a>
-            <span class="need">Need <a href="#" class="help">Help?</a></span>
+              <button class="bntc-modal">
+                Close <i class="ti-close"></i>
+            </button>
+                        <span class="need">Need <a href="#" class="help">Help?</a></span>
             </div>
             
           </div>
@@ -199,4 +201,30 @@
        
     </div>
   </body>
+  <script>
+    const btnBuytickets = document.querySelectorAll('.js-buy-ticket');
+    const modal = document.querySelector('.js-modal');
+    const closeIcon = document.querySelector('.close-icon');
+    const bntClose = document.querySelector('.bntc-modal');
+
+    for(btnBuyticket of btnBuytickets){
+      btnBuyticket.addEventListener('click', function(){
+        modal.style.display = 'flex';
+      })
+    }
+
+
+    function closeModal(){
+      modal.style.display = 'none';
+    }
+    closeIcon.addEventListener('click',closeModal);
+    
+    bntClose.addEventListener('click',closeModal);
+
+    modal.addEventListener('click', function(e){
+      if(e.target.classList.contains('js-modal')){
+        modal.style.display = 'none';
+      }
+    })
+  </script>
 </html>

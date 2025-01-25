@@ -219,23 +219,19 @@
 .place-desc {
   margin: 15px 0;
   line-height: 1.5;
-
 }
 
 .place-buy-btn {
   padding: 8px 16px;
   background-color: #000;
   color: #fff;
-  text-decoration: none;
+  border: none;
 }
 
-.place-buy-btn:hover
-{
+.place-buy-btn:hover {
   color: #000;
   background-color: #ccc;
 }
-
-
 
 #contract {
   color: #000;
@@ -303,18 +299,18 @@
   border-radius: 4px;
 }
 .buttonsend {
-  color: #fff ;
-  background-color: #000 ;
-  float: right ;
-  margin-top: 16px ;
-  margin-bottom: 16px ;
+  color: #fff;
+  background-color: #000;
+  float: right;
+  margin-top: 16px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   margin-right: 7px;
 }
 
 .buttonsend:hover {
-  color: #000 ;
-  background-color: #ccc ;
+  color: #000;
+  background-color: #ccc;
 }
 #footer {
   height: 162px;
@@ -349,7 +345,7 @@
   color: #000;
 }
 
-.modal{
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -360,15 +356,14 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
-.modal-container{
+.modal-container {
   background-color: #fff;
   border-radius: 5px;
   min-height: 200px;
   width: 900px;
   line-height: 1.5;
   position: relative;
-
+  animation: modalShow 0.5s;
 }
 
 .heading-modal {
@@ -381,10 +376,10 @@
   line-height: 1.5;
   position: relative;
 }
-.ti-bag{
+.ti-bag {
   margin-right: 10px;
 }
-.close-icon{
+.close-icon {
   position: absolute;
   right: 0;
   top: 0;
@@ -394,7 +389,7 @@
   cursor: pointer;
 }
 
-.body-modal{
+.body-modal {
   padding: 16px;
 }
 .label-modal {
@@ -406,16 +401,16 @@
   width: 100%;
   border: 1px solid #ddd;
 }
-.label{
+.label {
   margin-left: 5px;
 }
-a.bnt-modal {
- display: block;
+.bnt-modal {
+  display: block;
   width: 100%;
   background: #009688;
   padding: 16px;
   margin: 16px 0px;
-  text-decoration: none;
+  border: none;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -424,27 +419,44 @@ a.bnt-modal:hover {
   background-color: #ccc;
   color: #fff;
 }
-a.bntc-modal {
+.bntc-modal {
   padding: 8px 16px;
   background: red;
   margin: 16px 0px;
-  text-decoration: none;
   color: #fff;
+  border: none;
 }
 a.bntc-modal:hover {
   background: #ccc;
 }
 
 .footer-modal {
-display: block;
-margin-top: 30px;
-margin-bottom: 8px;
-
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 8px;
 }
 
-.need{
+.need {
   float: right;
+  line-height: 1.5;
+  margin: 16px 0;
 }
-.help{
+.help {
   color: #009688;
+}
+
+.openModal {
+  display: flex;
+}
+
+@keyframes modalShow {
+  from {
+    opacity: 0;
+    transform: translateY(-130px);
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
 }
