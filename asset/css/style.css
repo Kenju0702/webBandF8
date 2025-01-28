@@ -26,18 +26,32 @@
 .openModal {
   display: flex !important;
 }
-.row{
-margin-left: -8px;
-margin-right: -8px;
+.mt-8 {
+  margin-top: 8px;
 }
-.col{
+.mt-16 {
+  margin-top: 16px;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.col {
   float: left;
   padding: 0px 8px;
 }
-.col-half{
+.col-half {
   width: 50%;
 }
-.col-third{
+.col-first {
+  width: 100%;
+}
+.col-third {
   width: 33.33333%;
 }
 
@@ -257,80 +271,33 @@ margin-right: -8px;
   line-height: 1.5;
 }
 
-.contentContract {
-  padding: 0px 16px;
-  margin: 32px 0;
+.content-contract {
+  padding-top: 32px;
 }
-#contract .listInfomation {
-  display: block;
-  height: 81px;
-  float: left;
-  width: 45%;
-}
-#contract .listInfomation ul {
-  list-style-type: none;
+.contact-info {
   font-size: 18px;
-  line-height: 26px;
 }
 
-.iconInfo {
-  font-size: 20px; /* Kích thước biểu tượng */
-  color: #000; /* Màu biểu tượng */
-  margin-right: 10px; /* Khoảng cách giữa biểu tượng và nội dung */
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
 }
-
-#contract .content-section {
-  margin: 0px auto;
-  padding: 64px 16px;
+.contract-form {
+  font-size: 15px;
 }
-
-#contract .formInput {
-  width: 49%;
-  height: 160px;
-  float: right;
+.field-contact {
+  padding: 10px;
+  width: 100%;
 }
-
-#contract .formInput .field {
-  height: 31px;
-  width: 48%;
-  float: right; /* Đặt input nằm ngang */
-  margin-right: 2%; /* Khoảng cách giữa 2 input */
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-#contract .formInput .field1 {
-  height: 31px;
-  width: 48%;
-  float: left; /* Đặt input nằm ngang */
-  margin-right: 2%; /* Khoảng cách giữa 2 input */
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-#contract .formInput .field2 {
-  height: 31px;
-  width: 98%;
-  margin-top: 10px;
-  margin-right: 2%; /* Khoảng cách giữa 2 input */
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.buttonsend {
+.btn-contact {
   color: #fff;
   background-color: #000;
+  border: none;
+  padding: 11px 18px;
+  font-size: 15px;
   float: right;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 8px 16px;
-  margin-right: 7px;
 }
 
-.buttonsend:hover {
-  color: #000;
-  background-color: #ccc;
-}
 #footer {
   height: 162px;
   width: 100%;
@@ -461,15 +428,13 @@ a.bntc-modal:hover {
   margin: 16px 0;
 }
 
-
 @keyframes modalShow {
   from {
     opacity: 0;
     transform: translateY(-130px);
   }
-  to{
+  to {
     transform: translateY(0);
     opacity: 1;
   }
-  
 }
