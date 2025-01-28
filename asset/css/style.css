@@ -9,7 +9,6 @@
 }
 
 #main {
-  min-height: auto;
  }
 
 #html {
@@ -84,6 +83,7 @@
   left: 0;
   right: 0;
   z-index: 1;
+  overflow: hidden;
 }
 .nav {
   display: inline-block;
@@ -417,6 +417,8 @@ a.bnt-modal:hover {
   margin: 16px 0px;
   color: #fff;
   border: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 a.bntc-modal:hover {
   background: #ccc;

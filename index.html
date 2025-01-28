@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Band</title>
   <link rel="stylesheet" href="/asset/css/style.css" />
+  <link rel="stylesheet" href="asset/css/responsive.css">
   <link rel="stylesheet" href="/asset/font/themify-icons/themify-icons.css" />
 </head>
 
@@ -19,7 +19,7 @@
         <li><a href="#tour">Tour</a></li>
         <li><a href="#contract">Contract</a></li>
         <li>
-          <a href="">
+          <a href="#">
             More
             <i class="iconDown ti-angle-down"></i>
           </a>
@@ -35,6 +35,9 @@
       <!-- start-search  -->
       <div class="btn-search">
         <i class="searchIcon ti-search"></i>
+      </div>
+      <div class="btn-meunu">
+        <i class="searchIcon ti-menu"></i>
       </div>
       <!-- end-search  -->
     </div>
@@ -195,18 +198,45 @@
     <!--  end-footer  -->
     </div>
     <!--  end-content  -->
-
-
-
+    
+    
+    
   </div>
-
+  <!--  start-modal  -->
+  <div class="modal">
+    <div class="modal-container">
+      <div class="heading-modal">
+        <i class=" close-icon ti-close"></i>
+        <i class="ti-bag"></i> <span>Ticket</span>
+      </div>
+      <div class="body-modal">
+        <div class="label-modal">
+          <i class="ti-shopping-cart"></i> <span class="label">Tickets, $15 per person</span>
+        </div>
+        <input type="text" class="field" placeholder="How many?">
+        <div class="label-modal">
+          <i class="ti-user"></i> <span class="label">Send To</span>
+        </div>
+        <input type="text" class="field" placeholder="Enter your email">
+        <a href="#" class="bnt-modal"> Pay <i class="ti-check"></i></a>
+        <div class="footer-modal">
+          <button  class="bntc-modal">Close <i class="ti-close"></i></button>
+        <span class="need">Need <a href="#" class="help">Help?</a></span>
+        </div>
+        
+      </div>
+      
+    </div>
+    </div>
+  <!--  end-modal  -->
 
 </body>
 <script>
   const btnBuytickets = document.querySelectorAll('.js-buy-ticket');
-  const modal = document.querySelector('.js-modal');
+  const modal = document.querySelector('.modal');
   const closeIcon = document.querySelector('.close-icon');
   const bntClose = document.querySelector('.bntc-modal');
+  console.log(modal);
 
   for (btnBuyticket of btnBuytickets) {
     btnBuyticket.addEventListener('click', function () {
@@ -227,6 +257,25 @@
       modal.style.display = 'none';
     }
   })
+</script>
+<script>
+  var headerMenu=document.getElementById('header');
+  var menuIcon=document.querySelector('.btn-meunu');
+  var currentHeight=headerMenu.clientHeight;
+  var headerItems=document.querySelectorAll('.nav li a');
+  console.log(headerItems);
+
+  menuIcon.addEventListener('click',function(){
+   headerMenu.clientHeight===currentHeight
+   ?headerMenu.style.height='auto'
+   :headerMenu.style.height=currentHeight+'px'
+  })
+
+  for(var i=0;i<headerItems.length;i++){
+    headerItems[i].addEventListener('click',function(){
+      headerMenu.style.height=currentHeight+'px';
+    })
+  }
 </script>
 
 </html>
