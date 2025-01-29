@@ -4,12 +4,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
-  height: auto;
-
 }
 
 #main {
- }
+}
 
 #html {
 }
@@ -73,6 +71,19 @@
   color: #000;
   background-color: #ccc;
 }
+.buttons{
+  transform: translateY(-150%);
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
 /*main*/
 
 #header {
@@ -83,7 +94,6 @@
   left: 0;
   right: 0;
   z-index: 1;
-  overflow: hidden;
 }
 .nav {
   display: inline-block;
@@ -108,16 +118,18 @@
   text-decoration: none;
   display: block;
 }
-.nav > li:hover > a,
-.subnav > li:hover > a {
+
+.subnav > li:hover > a,
+.nav > li:hover > a {
   background-color: #ccc;
   color: #000;
   cursor: pointer;
 }
 
 .nav li:hover .subnav {
-  display: block;
+  display: block; /* Hiện khi hover */
 }
+
 .nav .iconDown {
   font-size: 12px;
 }
@@ -149,12 +161,34 @@
   background-color: #f44336 !important;
   cursor: pointer;
 }
+#header .btn-meunu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 21px;
+  line-height: 46px;
+  display: none;
+}
+
+/* slider */
 
 #slider {
-  padding-top: 50%;
-  margin-top: 46px;
-  background: url("/asset/img/chicago.jpg") top center / cover no-repeat;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.place-slider {
+  flex: 0 0 100%;
   position: relative;
+  display: none;
+}
+#slider .slider-img {
+  margin-top: 46px;
+  width: 100%;
+  height: auto;
+
+}
+#slider .active {
+  display: block;
 }
 
 #slider .text-content {
@@ -168,7 +202,19 @@
   font-size: 15px;
   margin-top: 25px;
 }
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
 
+.next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+/* content */
 #content .content-section {
   width: 800px;
   max-width: 100%;
@@ -212,6 +258,7 @@
   width: 154px;
 }
 
+/* tour */
 #tour {
   background-color: #000;
 }
@@ -274,6 +321,7 @@
   line-height: 1.5;
 }
 
+/* contract */
 #contract {
   color: #000;
   line-height: 1.5;
@@ -304,7 +352,7 @@
   padding-top: 50%;
   margin-top: 46px;
 }
-
+/* footer */
 #footer {
   width: 100%;
   background-color: #f1f1f1;
@@ -322,19 +370,19 @@
 .footer-content .info-contents .ICon {
   display: inline-block;
 }
-.footer-content .ICon a{
+.footer-content .ICon a {
   text-decoration: none;
-color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 .nqt a:hover,
-.footer-content .ICon a:hover{
+.footer-content .ICon a:hover {
   color: rgba(0, 0, 0, 0.4);
 }
 .nqt {
   margin-top: 15px;
   color: rgba(0, 0, 0, 0.6);
 }
-.nqt a{
+.nqt a {
   color: rgba(0, 0, 0, 0.6);
 }
 .modal {
@@ -370,6 +418,7 @@ color: rgba(0, 0, 0, 0.6);
 }
 .ti-bag {
   margin-right: 10px;
+  
 }
 .close-icon {
   position: absolute;
