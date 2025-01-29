@@ -32,14 +32,14 @@
         </ul>
         <!-- end-navigation  -->
 
-        <!-- start-search  -->
+        <!-- button-menuPC-->
         <div class="btn-search">
           <i class="searchIcon ti-search"></i>
         </div>
+        <!-- button-menuMobile-->
         <div class="btn-meunu">
           <i class="searchIcon ti-menu"></i>
         </div>
-        <!-- end-search  -->
       </div>
 
       <!-- start-slider  -->
@@ -309,7 +309,6 @@
     const modal = document.querySelector(".modal");
     const closeIcon = document.querySelector(".close-icon");
     const bntClose = document.querySelector(".bntc-modal");
-    console.log(modal);
 
     for (btnBuyticket of btnBuytickets) {
       btnBuyticket.addEventListener("click", function () {
@@ -350,8 +349,6 @@
         var subnav =
           this.nextElementSibling &&
           this.nextElementSibling.classList.contains("subnav");
-        console.log(subnav);
-
         subnav
           ? event.preventDefault()
           : (headerMenu.style.height = currentHeight + "px");
@@ -362,7 +359,6 @@
   <script>
     let placeSliders = document.querySelectorAll(".place-slider");
     let currentIndex = 0;
-    console.log(placeSliders);
     function showImage(index) {
       placeSliders.forEach((place) => place.classList.remove("active"));
       placeSliders[index].classList.add("active");
