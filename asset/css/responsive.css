@@ -15,13 +15,13 @@
         text-align: start;
 
     }
-
-    .s-col-third {
+     .btn{
+        width: 100%;
+     }
+    .s-col-full {
         width: 100%;
     }
-    .s-col-half {
-        width: 100%;
-      }
+   
       .s-mt-8{
         margin-top: 8px;
       }
