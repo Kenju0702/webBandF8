@@ -15,18 +15,19 @@
         text-align: start;
 
     }
-    .col {
-        float: left;
-        padding: 8px 8px;
-    }
 
-    .col-third {
+    .s-col-third {
         width: 100%;
     }
-    .col-half {
+    .s-col-half {
         width: 100%;
       }
-   
+      .s-mt-8{
+        margin-top: 8px;
+      }
+      .s-mt-16{
+        margin-top: 16px;
+      }
   
     #header {
     overflow: hidden;
@@ -63,4 +64,16 @@
   .buttons{
     display: none;
   }
+
+  #slider .text-content{
+    display: none;
+  }
+
+  #content .img-nember {
+    width: 60%;
+}
+.modal{
+    padding: 0px 0.5em;
+}
+
 }
