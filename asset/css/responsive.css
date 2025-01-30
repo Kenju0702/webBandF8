@@ -1,16 +1,28 @@
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .btn-meunu {
     display: none;
   }
 }
+/* TABLE  and mobile*/
+@media (max-width: 64em) {
+    .btn{
+        padding: 1.2em 1em;
+    }
+    .ICon {
+        margin: 0px 8px;
+    }
+    .contact-info {
+        line-height: 1.7;
+    }
+}
 /* TABLE */
 
-@media (min-width: 740px) and(max-width: 1024px) {
+@media (min-width: 46.25em) and(max-width: 63.9375em) {
 }
 
 /* MOBILE */
-@media (max-width: 740px) {
+@media (max-width: 46.1875em) {
     #main{
         text-align: start;
 
@@ -72,6 +84,12 @@
   #content .img-nember {
     width: 60%;
 }
+
+.nqt a {
+    padding: 15px 0px;
+    display: inline-block;
+}
+
 .modal{
     padding: 0px 0.5em;
 }
